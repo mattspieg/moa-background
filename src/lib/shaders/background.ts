@@ -93,8 +93,8 @@ export const BACKGROUND_SHADERS = {
       vColor = uColor[3];
 
       for (int i = 0; i < 3; i++) {
-        float noiseFlow = 60.0 + float(i) * 0.3; // Increased noise flow speed
-        float noiseSpeed = 60.0 + float(i) * 0.3; // Increased noise speed
+        float noiseFlow = 15.0 + float(i) * 0.3; // Increased noise flow speed
+        float noiseSpeed = 25.0 + float(i) * 0.3; // Increased noise speed
         float noiseSeed = 1.0 + float(i) * 10.0;
         vec2 noiseFreq = vec2(1.6, 1.8) * 0.5; // Increased frequency for more dense noise
         float noiseFloor = 0.1;

@@ -3817,8 +3817,8 @@ No matching component was found for:
       vColor = uColor[3];
 
       for (int i = 0; i < 3; i++) {
-        float noiseFlow = 60.0 + float(i) * 0.3; // Increased noise flow speed
-        float noiseSpeed = 60.0 + float(i) * 0.3; // Increased noise speed
+        float noiseFlow = 15.0 + float(i) * 0.3; // Increased noise flow speed
+        float noiseSpeed = 25.0 + float(i) * 0.3; // Increased noise speed
         float noiseSeed = 1.0 + float(i) * 10.0;
         vec2 noiseFreq = vec2(1.6, 1.8) * 0.5; // Increased frequency for more dense noise
         float noiseFloor = 0.1;
@@ -3842,4 +3842,4 @@ No matching component was found for:
 
       gl_FragColor = color;
     }
-  `};function wz(){const n=ze.useMemo(()=>({uTime:{value:0},uColor:{value:[new be("#3175DC"),new be("#EC0001"),new be("#10C2E6"),new be("#564D88")]}}),[]);return ez(()=>{n.uTime.value+=5e-5}),Ys.jsxs("mesh",{children:[Ys.jsx("planeGeometry",{args:[8,8,300,300]}),Ys.jsx("shaderMaterial",{vertexShader:Pw.vertex,fragmentShader:Pw.fragment,uniforms:n})]})}function Ez(){return Ys.jsx(Mz,{style:{height:"100vh",width:"100vw"},camera:{position:[0,0,.5]},children:Ys.jsx(wz,{})})}function Tz(){return Ys.jsx(Ez,{})}C0.createRoot(document.getElementById("backgroundMount")).render(Ys.jsx(E2.StrictMode,{children:Ys.jsx(Tz,{})}));
+  `};function wz(){const n=ze.useMemo(()=>({uTime:{value:0},uColor:{value:[new be("#3175DC"),new be("#EC0001"),new be("#10C2E6"),new be("#564D88")]}}),[]);return ez(()=>{n.uTime.value+=5e-5}),Ys.jsxs("mesh",{children:[Ys.jsx("planeGeometry",{args:[8,8,300,300]}),Ys.jsx("shaderMaterial",{vertexShader:Pw.vertex,fragmentShader:Pw.fragment,uniforms:n})]})}function Ez(){return Ys.jsx(Mz,{style:{height:"100vh",width:"100vw"},camera:{position:[0,0,.8]},children:Ys.jsx(wz,{})})}function Tz(){return Ys.jsx(Ez,{})}C0.createRoot(document.getElementById("backgroundMount")).render(Ys.jsx(E2.StrictMode,{children:Ys.jsx(Tz,{})}));

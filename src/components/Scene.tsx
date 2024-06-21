@@ -5,7 +5,7 @@ export default function Scene() {
   return (
     <Canvas
       style={{ height: '100vh', width: '100vw' }}
-      camera={{ position: [0, 0, .5] }}
+      camera={{ position: [0, 0, .8] }}
     >
       <Background />
     </Canvas>
