@@ -12,7 +12,7 @@ export default function Background() {
           new THREE.Color('#656AFB'),
           new THREE.Color('#E60000'),
           new THREE.Color('#12C0E7'),
-          new THREE.Color('#564D88'),
+          new THREE.Color('#000000'),
         ],
       },
     };
