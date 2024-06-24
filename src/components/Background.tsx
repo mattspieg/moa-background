@@ -9,9 +9,9 @@ export default function Background() {
       uTime: { value: 0 },
       uColor: {
         value: [
-          new THREE.Color('#3175DC'),
-          new THREE.Color('#EC0001'),
-          new THREE.Color('#10C2E6'),
+          new THREE.Color('#656AFB'),
+          new THREE.Color('#E60000'),
+          new THREE.Color('#12C0E7'),
           new THREE.Color('#564D88'),
         ],
       },
