@@ -9,10 +9,9 @@ export default function Background() {
       uTime: { value: 0 },
       uColor: {
         value: [
-          new THREE.Color('#656AFB'),
-          new THREE.Color('#E60000'),
-          new THREE.Color('#12C0E7'),
-          new THREE.Color('#000000'),
+          ...(window as unknown as {customColors:string[]}).customColors.map(e => {
+            return new THREE.Color(e)
+          })
         ],
       },
     };
@@ -33,3 +32,4 @@ export default function Background() {
     </mesh>
   );
 }
+
