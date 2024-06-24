@@ -3822,7 +3822,7 @@ No matching component was found for:
         float noiseSeed = 1.0 + float(i) * 10.0;
         vec2 noiseFreq = vec2(1.6, 1.8) * 0.5; // Increased frequency for more dense noise
         float noiseFloor = 0.1;
-        float noiseCeil = 0.5 + float(i) * 0.05; // Reduced ceiling for more overlap
+        float noiseCeil = 0.4 + float(i) * 0.04; // Reduced ceiling for more overlap
 
         float noise = smoothstep(noiseFloor, noiseCeil, snoise(vec3(noiseCoord.x * noiseFreq.x + uTime * noiseFlow, noiseCoord.y * noiseFreq.y, uTime * noiseSpeed + noiseSeed)));
 
@@ -3842,4 +3842,4 @@ No matching component was found for:
 
       gl_FragColor = color;
     }
-  `};function wz(){const n=ze.useMemo(()=>({uTime:{value:0},uColor:{value:[new be("#656AFB"),new be("#E60000"),new be("#12C0E7"),new be("#000000")]}}),[]);return ez(()=>{n.uTime.value+=5e-5}),Ys.jsxs("mesh",{children:[Ys.jsx("planeGeometry",{args:[8,8,300,300]}),Ys.jsx("shaderMaterial",{vertexShader:Pw.vertex,fragmentShader:Pw.fragment,uniforms:n})]})}function Ez(){return Ys.jsx(Mz,{style:{height:"100vh",width:"100vw"},camera:{position:[0,0,.6]},children:Ys.jsx(wz,{})})}function Tz(){return Ys.jsx(Ez,{})}C0.createRoot(document.getElementById("backgroundMount")).render(Ys.jsx(E2.StrictMode,{children:Ys.jsx(Tz,{})}));
+  `};function wz(){const n=ze.useMemo(()=>({uTime:{value:0},uColor:{value:[new be("#656AFB"),new be("#E60000"),new be("#12C0E7"),new be("#000000")]}}),[]);return ez(()=>{n.uTime.value+=5e-5}),Ys.jsxs("mesh",{children:[Ys.jsx("planeGeometry",{args:[8,8,300,300]}),Ys.jsx("shaderMaterial",{vertexShader:Pw.vertex,fragmentShader:Pw.fragment,uniforms:n})]})}function Ez(){return Ys.jsx(Mz,{style:{height:"100vh",width:"100vw"},camera:{position:[0,0,.3]},children:Ys.jsx(wz,{})})}function Tz(){return Ys.jsx(Ez,{})}C0.createRoot(document.getElementById("backgroundMount")).render(Ys.jsx(E2.StrictMode,{children:Ys.jsx(Tz,{})}));

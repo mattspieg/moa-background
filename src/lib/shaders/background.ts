@@ -98,7 +98,7 @@ export const BACKGROUND_SHADERS = {
         float noiseSeed = 1.0 + float(i) * 10.0;
         vec2 noiseFreq = vec2(1.6, 1.8) * 0.5; // Increased frequency for more dense noise
         float noiseFloor = 0.1;
-        float noiseCeil = 0.5 + float(i) * 0.05; // Reduced ceiling for more overlap
+        float noiseCeil = 0.4 + float(i) * 0.04; // Reduced ceiling for more overlap
 
         float noise = smoothstep(noiseFloor, noiseCeil, snoise(vec3(noiseCoord.x * noiseFreq.x + uTime * noiseFlow, noiseCoord.y * noiseFreq.y, uTime * noiseSpeed + noiseSeed)));
 
